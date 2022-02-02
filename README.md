@@ -18,19 +18,23 @@ Account statements return time of transaction, credit, debit and balance
 
 **Creating a new account**
 
-ruby
-```account = Account.new()```
+```ruby
+account = Account.new()```
 
 **deposit 100 -**
-ruby
-```account.debit(100)```
+
+```ruby
+account.debit(100)
+```
 
 **withdrawing 50 -**
-ruby
-```account.credit(50)```
+```ruby
+account.credit(50)```
 
 **Printing account statements**
-```account.statement```
+
+```ruby
+account.statement```
 
 Used TDD to write all code and tests,  with 100% test coverage.
 Used requirements to sketch domain model with short methods with one responsibility (e.g. withdraw, deposit, statements ).
