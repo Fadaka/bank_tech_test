@@ -16,20 +16,20 @@ Account statements return time of transaction, credit, debit and balance
 
 #Usage (within irb)
 
-#Creating a new account
+**Creating a new account**
 account = Account.new()
 
-#deposit 100
+**deposit 100 -**
 account.debit(100)
 
-#withdrawing 50
+**withdrawing 50 -**
 account.credit(50)
 
-#Printing account statements
+**Printing account statements**
 account.statement
 
-Used TDD to write all code with 100% test coverage.
-Used requirements to sketch domain model with short methods with one responsibility (e.g. withdraw, deposit, statemnet ).
+Used TDD to write all code and tests,  with 100% test coverage.
+Used requirements to sketch domain model with short methods with one responsibility (e.g. withdraw, deposit, statements ).
 used raise error to check that insufficients funds were present
 Made use of doubles .
-Refactored code and tried to adhere to SRp.
+Refactored code and adhered to SRP.
