@@ -34,4 +34,6 @@ used raise error to check that insufficients funds were present
 Made use of doubles .
 Refactored code and adhered to SRP.
 
+![alt text]https://github.com/Fadaka/bank_tech_test/blob/main/Screenshot%202022-02-02%20at%2007.57.05.png
+
 
