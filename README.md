@@ -33,3 +33,5 @@ Used requirements to sketch domain model with short methods with one responsibil
 used raise error to check that insufficients funds were present
 Made use of doubles .
 Refactored code and adhered to SRP.
+
+
