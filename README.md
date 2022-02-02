@@ -17,6 +17,7 @@ Account statements return time of transaction, credit, debit and balance
 ##Usage (within irb)
 
 **Creating a new account**
+
 ruby
 ```account = Account.new()
 
