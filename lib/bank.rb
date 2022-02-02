@@ -1,11 +1,11 @@
 # frozen_string_literal: true
-
+INITIALISED_BALANCE = 0
 class Account
   attr_reader :balance, :debit, :credit, :transac_time, :debit_history, :credit_history, :balance_history,
               :transac_history
 
   def initialize
-    @balance = 0
+    @balance = INITIALISED_BALANCE
     @debit_history = []
     @credit_history = []
     @balance_history = []

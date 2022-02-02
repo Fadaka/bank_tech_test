@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-02-02T07:12:17+00:00">2022-02-02T07:12:17+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-02-02T08:12:15+00:00">2022-02-02T08:12:15+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -84,7 +84,7 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#4cd057961f14d879b9f311cbc67824c292b22e80" class="src_link" title="spec/bank_spec.rb">spec/bank_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">54</td>
+            <td class="cell--number">52</td>
             <td class="cell--number">33</td>
             <td class="cell--number">33</td>
             <td class="cell--number">0</td>
@@ -136,24 +136,24 @@
     <ol>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="1">
+          <li class="never" data-hits="" data-linenumber="1">
+            
+            
+
+            
+
+            <code class="ruby"># frozen_string_literal: true</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="2">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">class Account</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="2">
-            
-            
-
-            
-
-            <code class="ruby">    </code>
+            <code class="ruby">INITIALISED_BALANCE = 0</code>
           </li>
         </div>
       
@@ -164,12 +164,34 @@
 
             
 
-            <code class="ruby">    attr_reader :balance, :debit, :credit, :transac_time, :debit_history, :credit_history, :balance_history,:transac_history</code>
+            <code class="ruby">class Account</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="4">
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  attr_reader :balance, :debit, :credit, :transac_time, :debit_history, :credit_history, :balance_history,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="5">
+            
+            
+
+            
+
+            <code class="ruby">              :transac_history</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="6">
             
             
 
@@ -180,35 +202,13 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="5">
+          <li class="covered" data-hits="1" data-linenumber="7">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    def initialize </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="8" data-linenumber="6">
-            <span class="hits">8</span>
-            
-
-            
-
-            <code class="ruby">        @balance = 0</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="8" data-linenumber="7">
-            <span class="hits">8</span>
-            
-
-            
-
-            <code class="ruby">        @debit_history = []</code>
+            <code class="ruby">  def initialize</code>
           </li>
         </div>
       
@@ -219,7 +219,7 @@
 
             
 
-            <code class="ruby">        @credit_history = []</code>
+            <code class="ruby">    @balance = INITIALISED_BALANCE</code>
           </li>
         </div>
       
@@ -230,7 +230,7 @@
 
             
 
-            <code class="ruby">        @balance_history = []</code>
+            <code class="ruby">    @debit_history = []</code>
           </li>
         </div>
       
@@ -241,23 +241,45 @@
 
             
 
-            <code class="ruby">        @transac_history = []</code>
+            <code class="ruby">    @credit_history = []</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="11">
+          <li class="covered" data-hits="8" data-linenumber="11">
+            <span class="hits">8</span>
+            
+
+            
+
+            <code class="ruby">    @balance_history = []</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="8" data-linenumber="12">
+            <span class="hits">8</span>
+            
+
+            
+
+            <code class="ruby">    @transac_history = []</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="13">
             
             
 
             
 
-            <code class="ruby">    end</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="12">
+          <li class="never" data-hits="" data-linenumber="14">
             
             
 
@@ -268,35 +290,13 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="13">
+          <li class="covered" data-hits="1" data-linenumber="15">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    def debit(amount)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="8" data-linenumber="14">
-            <span class="hits">8</span>
-            
-
-            
-
-            <code class="ruby">        @balance += amount</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="8" data-linenumber="15">
-            <span class="hits">8</span>
-            
-
-            
-
-            <code class="ruby">        @debit_history.push(amount)</code>
+            <code class="ruby">  def debit(amount)</code>
           </li>
         </div>
       
@@ -307,7 +307,7 @@
 
             
 
-            <code class="ruby">        @credit_history.push(&quot; &quot;)</code>
+            <code class="ruby">    @balance += amount</code>
           </li>
         </div>
       
@@ -318,7 +318,7 @@
 
             
 
-            <code class="ruby">        @balance_history.push(@balance)</code>
+            <code class="ruby">    @debit_history.push(amount)</code>
           </li>
         </div>
       
@@ -329,7 +329,7 @@
 
             
 
-            <code class="ruby">        transac_time</code>
+            <code class="ruby">    @credit_history.push(&#39; &#39;)</code>
           </li>
         </div>
       
@@ -340,40 +340,40 @@
 
             
 
-            <code class="ruby">        return @balance</code>
+            <code class="ruby">    @balance_history.push(@balance)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="20">
-            
-            
-
+          <li class="covered" data-hits="8" data-linenumber="20">
+            <span class="hits">8</span>
             
 
-            <code class="ruby">    end</code>
+            
+
+            <code class="ruby">    transac_time</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="21">
-            
-            
-
+          <li class="covered" data-hits="8" data-linenumber="21">
+            <span class="hits">8</span>
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">    @balance</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="22">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="22">
+            
             
 
             
 
-            <code class="ruby">    def credit(amount)</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -389,24 +389,24 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="4" data-linenumber="24">
-            <span class="hits">4</span>
-            
-
-            
-
-            <code class="ruby">        if amount&gt; @balance</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="25">
+          <li class="covered" data-hits="1" data-linenumber="24">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">            raise &#39;insufficient balance in account&#39;</code>
+            <code class="ruby">  def credit(amount)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="4" data-linenumber="25">
+            <span class="hits">4</span>
+            
+
+            
+
+            <code class="ruby">    raise &#39;insufficient balance in account&#39; if amount &gt; @balance</code>
           </li>
         </div>
       
@@ -417,7 +417,7 @@
 
             
 
-            <code class="ruby">        end</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -428,7 +428,7 @@
 
             
 
-            <code class="ruby">         @balance -= amount</code>
+            <code class="ruby">    @balance -= amount</code>
           </li>
         </div>
       
@@ -439,7 +439,7 @@
 
             
 
-            <code class="ruby">         @credit_history.push(amount)</code>
+            <code class="ruby">    @credit_history.push(amount)</code>
           </li>
         </div>
       
@@ -450,7 +450,7 @@
 
             
 
-            <code class="ruby">         @debit_history.push(&quot; &quot;)</code>
+            <code class="ruby">    @debit_history.push(&#39; &#39;)</code>
           </li>
         </div>
       
@@ -461,7 +461,7 @@
 
             
 
-            <code class="ruby">         @balance_history.push(@balance)</code>
+            <code class="ruby">    @balance_history.push(@balance)</code>
           </li>
         </div>
       
@@ -472,7 +472,7 @@
 
             
 
-            <code class="ruby">         transac_time</code>
+            <code class="ruby">    transac_time</code>
           </li>
         </div>
       
@@ -483,7 +483,7 @@
 
             
 
-            <code class="ruby">        return @balance </code>
+            <code class="ruby">    @balance</code>
           </li>
         </div>
       
@@ -494,7 +494,7 @@
 
             
 
-            <code class="ruby">    end</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -505,7 +505,7 @@
 
             
 
-            <code class="ruby"> </code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -516,7 +516,7 @@
 
             
 
-            <code class="ruby">    def transac_time</code>
+            <code class="ruby">  def transac_time</code>
           </li>
         </div>
       
@@ -527,7 +527,7 @@
 
             
 
-            <code class="ruby">        t = Time.now</code>
+            <code class="ruby">    t = Time.now</code>
           </li>
         </div>
       
@@ -538,7 +538,7 @@
 
             
 
-            <code class="ruby">        date_array = (@balance_history).map {t}</code>
+            <code class="ruby">    date_array = @balance_history.map { t }</code>
           </li>
         </div>
       
@@ -549,7 +549,7 @@
 
             
 
-            <code class="ruby">        date_array_formatted = date_array.map {|date| date.strftime(&quot;%d-%m-%Y&quot;)}</code>
+            <code class="ruby">    date_array_formatted = date_array.map { |date| date.strftime(&#39;%d-%m-%Y&#39;) }</code>
           </li>
         </div>
       
@@ -560,7 +560,7 @@
 
             
 
-            <code class="ruby">        transac_history.push(date_array_formatted[-1])</code>
+            <code class="ruby">    transac_history.push(date_array_formatted[-1])</code>
           </li>
         </div>
       
@@ -571,7 +571,7 @@
 
             
 
-            <code class="ruby">    end</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -593,7 +593,7 @@
 
             
 
-            <code class="ruby">    def statement</code>
+            <code class="ruby">  def statement</code>
           </li>
         </div>
       
@@ -604,7 +604,7 @@
 
             
 
-            <code class="ruby">        statment_array = [@transac_history, @credit_history, @debit_history, @balance_history]</code>
+            <code class="ruby">    statment_array = [@transac_history, @credit_history, @debit_history, @balance_history]</code>
           </li>
         </div>
       
@@ -615,7 +615,7 @@
 
             
 
-            <code class="ruby">        bank_statement = statment_array.transpose()</code>
+            <code class="ruby">    bank_statement = statment_array.transpose</code>
           </li>
         </div>
       
@@ -626,7 +626,7 @@
 
             
 
-            <code class="ruby">        print (&#39;[DATE, CREDIT, DEBIT, BALANCE]&#39;)</code>
+            <code class="ruby">    print(&#39;[DATE, CREDIT, DEBIT, BALANCE]&#39;)</code>
           </li>
         </div>
       
@@ -637,7 +637,7 @@
 
             
 
-            <code class="ruby">        return bank_statement</code>
+            <code class="ruby">    bank_statement</code>
           </li>
         </div>
       
@@ -648,7 +648,7 @@
 
             
 
-            <code class="ruby">    end</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -695,13 +695,13 @@
     <ol>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="1">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="1">
+            
             
 
             
 
-            <code class="ruby">require &#39;bank&#39;</code>
+            <code class="ruby"># frozen_string_literal: true</code>
           </li>
         </div>
       
@@ -723,7 +723,7 @@
 
             
 
-            <code class="ruby">describe Account do</code>
+            <code class="ruby">require &#39;bank&#39;</code>
           </li>
         </div>
       
@@ -739,35 +739,35 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="9" data-linenumber="5">
+          <li class="covered" data-hits="1" data-linenumber="5">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">describe Account do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="9" data-linenumber="6">
             <span class="hits">9</span>
             
 
             
 
-            <code class="ruby">    let (:santander) {described_class.new}</code>
+            <code class="ruby">  let(:santander) { described_class.new }</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="6">
+          <li class="never" data-hits="" data-linenumber="7">
             
             
 
             
 
             <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="7">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    it &#39; will check that an amount can be deposite into account&#39; do</code>
           </li>
         </div>
       
@@ -778,7 +778,7 @@
 
             
 
-            <code class="ruby">        santander.debit(300)</code>
+            <code class="ruby">  it &#39; will check that an amount can be deposite into account&#39; do</code>
           </li>
         </div>
       
@@ -789,18 +789,18 @@
 
             
 
-            <code class="ruby">        expect(santander.balance).to eq(300)</code>
+            <code class="ruby">    santander.debit(300)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="10">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="10">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">    end</code>
+            
+
+            <code class="ruby">    expect(santander.balance).to eq(300)</code>
           </li>
         </div>
       
@@ -811,18 +811,18 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="12">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="12">
+            
             
 
             
 
-            <code class="ruby">    it &#39;will check that an amount can be credited from an account &#39;do</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -833,7 +833,7 @@
 
             
 
-            <code class="ruby">        santander.debit(300)</code>
+            <code class="ruby">  it &#39;will check that an amount can be credited from an account &#39; do</code>
           </li>
         </div>
       
@@ -844,7 +844,7 @@
 
             
 
-            <code class="ruby">        santander.credit(100)</code>
+            <code class="ruby">    santander.debit(300)</code>
           </li>
         </div>
       
@@ -855,29 +855,29 @@
 
             
 
-            <code class="ruby">        expect(santander.balance).to eq(200)</code>
+            <code class="ruby">    santander.credit(100)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="16">
-            
-            
-
-            
-
-            <code class="ruby">    end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="17">
+          <li class="covered" data-hits="1" data-linenumber="16">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    it &#39;will raise an error ,if money is credited more than balance&#39;do</code>
+            <code class="ruby">    expect(santander.balance).to eq(200)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="17">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -888,29 +888,29 @@
 
             
 
-            <code class="ruby">        santander.debit(10)</code>
+            <code class="ruby">  it &#39;will raise an error ,if money is credited more than balance&#39; do</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="19">
+          <li class="covered" data-hits="1" data-linenumber="19">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    santander.debit(10)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="20">
             <span class="hits">2</span>
             
 
             
 
-            <code class="ruby">        expect{ santander.credit(100) }.to raise_error(&#39;insufficient balance in account&#39;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="20">
-            
-            
-
-            
-
-            <code class="ruby"></code>
+            <code class="ruby">    expect { santander.credit(100) }.to raise_error(&#39;insufficient balance in account&#39;)</code>
           </li>
         </div>
       
@@ -921,7 +921,7 @@
 
             
 
-            <code class="ruby">    end</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -943,7 +943,7 @@
 
             
 
-            <code class="ruby">    it &#39;will check that the debit has been recorded&#39; do</code>
+            <code class="ruby">  it &#39;will check that the debit has been recorded&#39; do</code>
           </li>
         </div>
       
@@ -954,7 +954,7 @@
 
             
 
-            <code class="ruby">        santander.debit(10)</code>
+            <code class="ruby">    santander.debit(10)</code>
           </li>
         </div>
       
@@ -965,7 +965,7 @@
 
             
 
-            <code class="ruby">        expect(santander.debit_history).to match_array([10])</code>
+            <code class="ruby">    expect(santander.debit_history).to match_array([10])</code>
           </li>
         </div>
       
@@ -976,7 +976,7 @@
 
             
 
-            <code class="ruby">    end</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -998,7 +998,7 @@
 
             
 
-            <code class="ruby">    it &#39;will check that the credit and debit has been recorded&#39; do</code>
+            <code class="ruby">  it &#39;will check that the credit and debit has been recorded&#39; do</code>
           </li>
         </div>
       
@@ -1009,7 +1009,7 @@
 
             
 
-            <code class="ruby">        santander.debit(100)</code>
+            <code class="ruby">    santander.debit(100)</code>
           </li>
         </div>
       
@@ -1020,7 +1020,7 @@
 
             
 
-            <code class="ruby">        santander.credit(100)</code>
+            <code class="ruby">    santander.credit(100)</code>
           </li>
         </div>
       
@@ -1031,7 +1031,7 @@
 
             
 
-            <code class="ruby">        expect(santander.credit_history).to match_array([&quot; &quot;,100])</code>
+            <code class="ruby">    expect(santander.credit_history).to match_array([&#39; &#39;, 100])</code>
           </li>
         </div>
       
@@ -1042,7 +1042,7 @@
 
             
 
-            <code class="ruby">    end</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -1058,13 +1058,13 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="34">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="34">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">  it &#39;will check that the balance has been recorded&#39; do</code>
           </li>
         </div>
       
@@ -1075,7 +1075,7 @@
 
             
 
-            <code class="ruby">    it &#39;will check that the balance has been recorded&#39; do</code>
+            <code class="ruby">    santander.debit(100)</code>
           </li>
         </div>
       
@@ -1086,7 +1086,7 @@
 
             
 
-            <code class="ruby">        santander.debit(100)</code>
+            <code class="ruby">    santander.credit(30)</code>
           </li>
         </div>
       
@@ -1097,18 +1097,18 @@
 
             
 
-            <code class="ruby">        santander.credit(30)</code>
+            <code class="ruby">    expect(santander.balance_history).to match_array([100, 70])</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="38">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="38">
+            
             
 
             
 
-            <code class="ruby">        expect(santander.balance_history).to match_array([100, 70])</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -1119,29 +1119,29 @@
 
             
 
-            <code class="ruby">        </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="40">
-            
-            
-
-            
-
-            <code class="ruby">    end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="41">
-            
-            
-
-            
-
             <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="40">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  it &#39;will check that the transaction time has been recorded&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="41">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    t = Time.now</code>
           </li>
         </div>
       
@@ -1152,7 +1152,7 @@
 
             
 
-            <code class="ruby">    it &#39;will check that the transaction time has been recorded&#39; do</code>
+            <code class="ruby">    santander.debit(100)</code>
           </li>
         </div>
       
@@ -1163,45 +1163,23 @@
 
             
 
-            <code class="ruby">        t = Time.now</code>
+            <code class="ruby">    expect(santander.statement[0][0]).to eq(t.strftime(&#39;%d-%m-%Y&#39;))</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="44">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="44">
+            
             
 
             
 
-            <code class="ruby">        santander.debit(100)</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="45">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">        expect(santander.statement[0][0]).to eq(t.strftime(&quot;%d-%m-%Y&quot;))</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="46">
-            
-            
-
-            
-
-            <code class="ruby">    end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="47">
+          <li class="never" data-hits="" data-linenumber="45">
             
             
 
@@ -1212,13 +1190,35 @@
         </div>
       
         <div>
+          <li class="covered" data-hits="1" data-linenumber="46">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  it &#39;will return a complete bank statement of transaction history&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="47">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    t = Time.now</code>
+          </li>
+        </div>
+      
+        <div>
           <li class="covered" data-hits="1" data-linenumber="48">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    it &#39;will return a complete bank statement of transaction history&#39; do</code>
+            <code class="ruby">    time_now = t.strftime(&#39;%d-%m-%Y&#39;)</code>
           </li>
         </div>
       
@@ -1229,7 +1229,7 @@
 
             
 
-            <code class="ruby">        t = Time.now</code>
+            <code class="ruby">    santander.debit(100)</code>
           </li>
         </div>
       
@@ -1240,45 +1240,23 @@
 
             
 
-            <code class="ruby">        time_now = t.strftime(&quot;%d-%m-%Y&quot;)</code>
+            <code class="ruby">    expect(santander.statement).to include([time_now, &#39; &#39;, 100, 100])</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="51">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="51">
+            
             
 
             
 
-            <code class="ruby">        santander.debit(100)</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="52">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">        expect(santander.statement).to include([time_now, &quot; &quot;, 100, 100])</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="53">
-            
-            
-
-            
-
-            <code class="ruby">    end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="54">
+          <li class="never" data-hits="" data-linenumber="52">
             
             
 

@@ -3,10 +3,11 @@
     "coverage": {
       "/Users/michaelkassim/Desktop/projects/bank_tech_test/spec/bank_spec.rb": {
         "lines": [
-          1,
+          null,
           null,
           1,
           null,
+          1,
           9,
           null,
           1,
@@ -24,7 +25,6 @@
           2,
           null,
           null,
-          null,
           1,
           1,
           1,
@@ -36,12 +36,10 @@
           1,
           null,
           null,
-          null,
           1,
           1,
           1,
           1,
-          null,
           null,
           null,
           1,
@@ -61,16 +59,10 @@
       },
       "/Users/michaelkassim/Desktop/projects/bank_tech_test/lib/bank.rb": {
         "lines": [
-          1,
           null,
           1,
-          null,
           1,
-          8,
-          8,
-          8,
-          8,
-          8,
+          1,
           null,
           null,
           1,
@@ -79,13 +71,19 @@
           8,
           8,
           8,
+          null,
+          null,
+          1,
+          8,
+          8,
+          8,
+          8,
+          8,
           8,
           null,
           null,
           1,
-          null,
           4,
-          1,
           null,
           3,
           3,
@@ -112,6 +110,6 @@
         ]
       }
     },
-    "timestamp": 1643785937
+    "timestamp": 1643789535
   }
 }
