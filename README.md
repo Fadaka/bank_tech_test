@@ -22,7 +22,7 @@ Account statements return time of transaction, credit, debit and balance
 account = Account.new()
 ```
 
-** deposit 100 -**
+**Deposit 100 -**
 
 ``` ruby
 account.debit(100)
