@@ -45,6 +45,4 @@ class Account
         print ('[DATE, CREDIT, DEBIT, BALANCE]')
         return bank_statement
     end
-
- 
 end
