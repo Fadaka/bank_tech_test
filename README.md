@@ -9,21 +9,24 @@ git clone https://github.com/Fadaka/bank_tech_test
 
 Clones the repo and loads the required files in itb.
 
-#Features
+##Features
 Debit (Deposits), Credit (withdrawal), Statement.
 
 Account statements return time of transaction, credit, debit and balance
 
-#Usage (within irb)
+##Usage (within irb)
 
 **Creating a new account**
-account = Account.new()
+ruby
+```account = Account.new()
 
 **deposit 100 -**
-account.debit(100)
+ruby
+```account.debit(100)
 
 **withdrawing 50 -**
-account.credit(50)
+ruby
+```account.credit(50)
 
 **Printing account statements**
 account.statement
@@ -35,5 +38,3 @@ Made use of doubles .
 Refactored code and adhered to SRP.
 
 ![alt text](https://github.com/Fadaka/bank_tech_test/blob/main/Screenshot%202022-02-02%20at%2007.57.05.png)
-
-
